@@ -81,7 +81,6 @@ public class StepDefinitionsImpl {
     public void buyer_should_be_redirected_to_inventory_page() {
         LoginPage loginPage = new LoginPage(driver);
 
-        // Gunakan metode dari Page Object untuk cek apakah login sukses
         Assert.assertTrue(loginPage.isLoginSuccessful(), "User is not redirected to inventory page after login!");
     }
 }
